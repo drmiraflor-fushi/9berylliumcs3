@@ -1,0 +1,38 @@
+# zodiacSectionLN.py
+
+# Dictionary mapping remainder (0-11) relative to 1900 to its corresponding Chinese Zodiac sign
+ZODIAC_SIGNS = {
+    0: "Rat (鼠 / Shǔ)",
+    1: "Ox (牛 / Niú)",
+    2: "Tiger (虎 / Hǔ)",
+    3: "Rabbit (兔 / Tù)",
+    4: "Dragon (龙 / Lóng)",
+    5: "Snake (蛇 / Shé)",
+    6: "Horse (马 / Mǎ)",
+    7: "Goat (羊 / Yáng)",
+    8: "Monkey (猴 / Hóu)",
+    9: "Rooster (鸡 / Jī)",
+    10: "Dog (狗 / Gǒu)",
+    11: "Pig (猪 / Zhū)"
+}
+
+def main():
+    try:
+        birth_year = int(input("Enter your birth year: "))
+        
+        # Input validation: check if the year is earlier than 1900
+        if birth_year < 1900:
+            print("Invalid Year, it should not be earlier than 1900")
+            return
+        
+        # Calculate zodiac index based on baseline year 1900
+        zodiac_index = (birth_year - 1900) % 12
+        zodiac_sign = ZODIAC_SIGNS[zodiac_index]
+        
+        print(f"Your Chinese Zodiac Sign is: {zodiac_sign}")
+
+    except ValueError:
+        print("Invalid input! Please enter a valid numerical year.")
+
+if __name__ == "__main__":
+    main()
