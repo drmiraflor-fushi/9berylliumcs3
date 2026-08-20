@@ -1,0 +1,112 @@
+Annex A
+Computational Thinking Exercise: “Smart School Canteen Queue”
+
+Section: 9-Beryllium				Score:
+Name:	Danielle R. Miraflor			Date: 8/20/2026
+
+Scenario
+The PSHS school canteen is small and often gets crowded during lunch break. Students line up to buy food, but the process is slow because:
+- Some students take too long to decide what to order.
+- The cashier has to manually calculate totals and give change.
+- There is no system to track which food items are running out.
+  
+Your group’s task is to decompose this problem into smaller, manageable parts that could be solved with computational thinking (CT) Skills.
+  
+Step 1: Identify the Big Problem
+Main Problem: Students and cashiers struggle with order-fetching and processing, leading to the canteen getting crowded easily due to the slow process.
+
+Step 2: Identify three to four Sub-Problems
+Please list possible sub-problems: 
+
+1. No tracking system for food items
+2. Long lines and accumulation of students in one small space
+3. Manual calculation of totals and change
+4. Cashier workload/stress
+
+Step 3: Define Computational Thinking Approaches
+For each sub-problem, apply CT skills:
+
+Sub-Problem, CT Skill, Example Solution
+FIRST SUB-PROBLEM: No food tracking system / not knowing what items are available
+CT SKILL: Algorithmic Design
+EXAMPLE SOLUTION: Develop a program the cashiers can check for the availability of food items.
+
+SECOND SUB-PROBLEM: Accumulation of students in one small space
+CT SKILL: Decomposition
+EXAMPLE SOLUTION: Breaking the queue into separate stations dedicated to different purposes (ordering, paying, picking up food).
+
+THIRD SUB-PROBLEM: Manual calculation
+CT SKILL: Pattern Recognition
+EXAMPLE SOLUTION: Providing a computer that contains the program (for the tracking system) and a built-in calculator that has the items and their prices and calculates the student’s total cost.
+
+FOURTH SUB-PROBLEM: Cashier workload and stress
+CT SKILL: Abstraction
+EXAMPLE SOLUTION: Designing a simplified user interface for popular items, hiding the underlying price lookups and database complexity from the cashier. 
+
+
+Step 4: Draw a flowchart or write pseudocode for the identified sub-problem 
+
+# 1. Setup Tracking System (Solves Sub-problem 1)
+# Format: "Item Name": [Price, Stock Quantity]
+inventory = {}
+    "Burger": [3.50, 20],
+    "Fries": [2.00, 15],
+    "Soda": [1.50, 30],
+    "Apple": [1.00, 5]
+
+print("=== Cafeteria System Initialized ===")
+
+# 2. Main loop to keep processing students smoothly (Solves Sub-problem 2)
+while True:
+    print("\n--- Next Student in Line ---")
+    total_cost = 0.0
+    student_ordering = True
+    
+    # Shows menu to the student
+    print("\nAvailable Menu:")
+    for item, details in inventory.items():
+        if details[1] > 0: # Only show if stock is greater than 0
+            print(f"- {item}: ${details[0]:.2f} ({details[1]} left)")
+    
+    # Sub-loop for ordering items
+    while student_ordering:
+        choice = input("\nEnter item to buy (or type 'done' to checkout): ").strip().title()
+        
+        if choice == "Done":
+            student_ordering = False
+        elif choice in inventory:
+            # Check stock availability
+            if inventory[choice][1] > 0:
+                total_cost += inventory[choice][0] # Add price to total
+                inventory[choice][1] -= 1          # Reduce stock count automatically
+                print(f"Added {choice}. Current Total: ${total_cost:.2f}")
+            else:
+                print(f"Sorry, {choice} is out of stock! (#｀-_ゝ-)")
+        else:
+            print("Invalid item. Please select from the menu. (●'◡'●)")
+            
+    # If the student doesn't buy anything, loops back to the next person
+    if total_cost == 0:
+        print("No items ordered.")
+        continue
+
+    # 3. Automated Checkout System (Solves Sub-problems 3 & 4)
+    print(f"\nFinal Total Due: ${total_cost:.2f}")
+    
+    # Loops until the cashier inputs enough money
+    while True:
+        try:
+            cash_received = float(input("Enter cash amount received: $"))
+            if cash_received >= total_cost:
+                break
+            else:
+                print(f"Not enough money! Student still owes ${total_cost - cash_received:.2f} ⊙﹏⊙∥ ")
+        except ValueError:
+            print("Please enter a valid numeric number. (˘･_･˘)")
+
+    # Calculates change automatically behind the scenes
+    change = cash_received - total_cost
+    print(f"Dispense Change: ${change:.2f}")
+    print("Transaction complete! Please move to the pickup area. (❁´◡`❁)")
+
+
