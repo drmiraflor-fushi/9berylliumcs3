@@ -22,7 +22,7 @@
 | DoNotPlayThisArtist | 'DoNotPlayThisArtist' allows the user to restrict an artist and his/her 
                         songs from showing up or playing. |
 ## Class Diagram
-![Class Diagram]()
+![Class Diagram](classObjectsUML.md.png)
 ## Design Explanation - I chose this design because it's simple and easy to follow. Every crucial item and information is featured.         
 ### Why did you choose this class? - I choose this class because it's a situation that I often find myself 
                                     enjoy indulging in. Spotify Playlist, and perhaps Spotify in its entirety, 
