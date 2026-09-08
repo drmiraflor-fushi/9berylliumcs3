@@ -42,6 +42,6 @@ The `update_status()` method changes the state of the object by taking a `new_st
 When `update_status("Private")` was executed on `track1`, its status changed to "Private", while `track2` remained completely unaffected with a status of "Public"[cite: 1]. This confirms each instantiated object manages its own distinct memory space[cite: 1].
 
 ### What is the difference between your class diagram and your object diagram?
-The class diagram acts as an abstract template defining general properties, methods, visibility symbols, and data types[cite: 1]. The object diagram displays concrete runtime instances (`track1` and `track2`) holding specific field values like `"Joji"` and `"Yoasobi"`[cite: 1].ces are independent?
+The class diagram acts as an abstract template defining general properties, methods, visibility symbols, and data types. The object diagram displays concrete runtime instances (`track1` and `track2`) holding specific field values like `"Niki"` and `"Tsunami"` are independent.
 
-### What is the difference between your class diagram and your object diagram?
+\
