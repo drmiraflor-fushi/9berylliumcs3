@@ -45,7 +45,7 @@ Changes from my previous design:
 | Genre | str | Public | This attribute is public because songs -- or albums -- are categorized according to their music genre |
 
 ## Updated UML
-+--------------------------------------------+
+
 | Spotify Playlist |
 +--------------------------------------------+
 | + Artist : str |
