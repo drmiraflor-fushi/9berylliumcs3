@@ -48,14 +48,14 @@ Changes from my previous design:
 +--------------------------------------------+
 | Spotify Playlist |
 +--------------------------------------------+
-| + Artist : str                              |
-| + Song : str                                |
-| - Status : str                              |
-| + Album : str                               |
-| + Genre : str                               |
+| + Artist : str |
+| + Song : str |
+| - Status : str |
+| + Album : str |
+| + Genre : str |
 +--------------------------------------------+
-| + Play()                                    |
-| + AddToLikedSongs(Song : str)               |
-| + Shuffle()                                 |  
+| + Play() |
+| + AddToLikedSongs(Song : str) |
+| + Shuffle() |  
 +--------------------------------------------+
 
