@@ -36,8 +36,8 @@ Changes from my previous design:
 
  
 ## Public & Private
-|---|---|---|---|
 | Attribute | Data Type | Visibility | Why Public / Private? |
+|---|---|---|---|
 | Artist | str | Public | This attribute is public because some users search up the name of the artist, not his/her album or song |
 | Song | str | Public | This attribute is public because the titles of songs are more often searched up compared to other attributes
 | Status | str | Privacy | This attribute is private because only the creator of the playlist can see if it (the playlist) is made private; on the other hand, the 'public' status will only be seen by other users, if it (the playlist) is made public. |
