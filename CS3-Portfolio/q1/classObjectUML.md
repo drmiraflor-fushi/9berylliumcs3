@@ -57,5 +57,4 @@ Changes from my previous design:
 | + Play() |
 | + AddToLikedSongs(Song : str) |
 | + Shuffle() |  
-+--------------------------------------------+
 
