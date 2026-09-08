@@ -44,7 +44,7 @@ Changes from my previous design:
 | Album | str | Public | This attribute is public because albums contain songs, and users may want to stream to the album's contents |
 | Genre | str | Public | This attribute is public because songs -- or albums -- are categorized according to their music genre |
 
-##Updated UML
+## Updated UML
 +--------------------------------------------+
 | Spotify Playlist |
 +--------------------------------------------+
