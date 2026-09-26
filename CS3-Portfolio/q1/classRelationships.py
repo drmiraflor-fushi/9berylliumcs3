@@ -20,12 +20,12 @@ def display_details(self) -> str:
   return f"'{self.song}' by {self.artist} ({self.album}) [{self.genre}] - Status:{self.status}"
 
 class User:
-  def --init--(self, username: str, email:str):
+  def __init__(self, username: str, email:str):
   self.username = username
   self.email = email
   self.savedsongs = []
   def add_track(self, track_object, SpotifyPlaylist):
-    if ininstance(track_obkect, SpotifyPlaylist):
+    if isinstance(track_object, SpotifyPlaylist):
       self.savedsongs.append(track_object)
       print(f"Added '{track_object.song}' to {self.username}'s library.")
     else:
@@ -38,7 +38,7 @@ class User:
       for index, track in enumerate(self.savedsongs, start=1):
         print(f"{index}. {track.display_details()}")
 
-if __name__ = "__main__":
+if __name__ == "__main__":
   # Code some example outputs / instantiating objects with 1 user and 3 tracks
   user1 = User("danielle_yass", "danielle@unicorns.com")
   track1 = SpotifyPlaylist("SZA", "Normal Girl", "SOS", "RNB")
@@ -46,13 +46,13 @@ if __name__ = "__main__":
   track3 = SpotifyPlaylist("Dove Cameron", "If Only", "Disney", "Descendants")
 
   # Produce test run outputs
-  print("==BEFORE RELATIONSHIP==")
+  print("== BEFORE RELATIONSHIP ==")
   print(f"User Created: {user1.username}")
   print(f"Track 1 Created: {track1.song}")
   print(f"Track 2 Created: {track2.song}")
   print(f"Track 3 Created: {track3.song}")
   user1.display_library()
-  print("\n===BUILDING THE RELATIONSHIP===")
+  print("\n=== BUILDING THE RELATIONSHIP ===")
   user1.add_track(track1)
   user1.add_track(track2)
   user1.add_track(track3)
