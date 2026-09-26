@@ -1,5 +1,9 @@
-### AI Copilot/s Used:
-The AI Copilots that I used were Google, Gemini, Claude, and NotebookLM.
+### AI Copilot/s Used
+**Tools Used:** The AI Copilots that I used were Google, Gemini, Claude, and NotebookLM.
 
-### Prompt/s Used:
-The prompts that I used were: "Help me understand the tasks for this activity. Explain in concise and understandable terms." "Is there an easier approach for this task?" "If I were to do [task] with [another approach], would it still work? If no, why and what should I do?" "What would an example output look like?" "Give an example code for the task." 
+### Prompt/s Used
+**Understanding & Comprehension:** "Help me understand the tasks for this activity. Explain in concise and understandable terms." 
+**Optimization:** "Is there an easier approach for this task?" 
+**Troubleshooting:** "If I were to do [task] with [another approach], would it still work? If no, why and what should I do?"
+**Output Previews:** "What would an example output look like?" 
+**Code Generation:** "Give an example code for the task." 
