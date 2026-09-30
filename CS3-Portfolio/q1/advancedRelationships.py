@@ -82,6 +82,22 @@ if __name__ == "__main__":
     user1.add_song(podcast1)
     user1.display_saved_songs()
 
+## Reflection
+
+### 1. Why did you choose your inheritance relationship?
+I chose `PodcastTrack` as a child of `SpotifyPlaylist` because a podcast episode IS-A track in a streaming app. It shares common audio properties like title, creator, and duration, but requires extra podcast-specific fields like host and episode number.
+
+### 2. How did inheritance reduce duplicate code?
+Inheritance allowed `PodcastTrack` to reuse the core `__init__()` attributes and `get_status()` logic from `SpotifyPlaylist` using `super().__init__()'.. I did not need to re-write duration calculation or visibility status checks.
+
+### 3. Why is your HAS-A relationship Composition or Aggregation?
+The relationship between `User` and `saved_songs` is Aggregation (weak HAS-A). Tracks exist globally in Spotify's catalog; if a user deletes their account, the song objects remain intact for other users.
+
+### 4. What is the difference between Association from Part III and the advanced relationship you implemented?
+Association in Part III represented a generic link between classes. Part IV refined this into Aggregation (specifying container ownership without lifecycle destruction) and Dependency (a temporary "uses-a" parameter interaction).
+
+### 5. How does your design follow the DRY principle?
+By leveraging parent class methods through `super()`, common tracking behaviors are defined once in `SpotifyPlaylist` and shared across specialized track types like `PodcastTrack`, avoiding code duplication.
     print("\n=== TEST 3: DEPENDENCY (User USES-A AudioPlayer) ===")
     player_device = AudioPlayer()
     # User uses player_device temporarily to stream the second saved track
