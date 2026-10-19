@@ -1,12 +1,16 @@
-Name of Student: Danielle R. Miraflor
+### Name of Student ᓚᘏᗢ : 
+# Danielle R. Miraflor
 
-Section: 9-Beryllium
+### Section: 
+## 9-Beryllium
 
-Corporate Email: drmiraflor@brc.pshs.edu.ph
+### Corporate Email: 
+## drmiraflor@brc.pshs.edu.ph
 
-Nickname: Danie
+#### Nickname: 
+# Danie
 
-Age: 14
+##### Age: 14
 
 ## Quarter 1 Works
 ### Computational Thinking Skills
