@@ -8,11 +8,32 @@ Nickname: Danie
 
 Age: 14
 
+## Quarter 1 Works
+### Computational Thinking Skills
+![CT SKILLS](ctskillsBerylliumMiraflor)
+
+### Chinese Zodiac
+![Chinese Zodiac](zodiacBerylliumMiraflor)
+
+### ILA OOP
+![ILA OOP](ila_oop.md)
+
+### OOP ACTS
+![Class Relationships](classRelationships.py)
+![Class Relationships](classRelationships.md)
+![Class Objects](classObjectUML.md)
+![Class Implementation](classImplementation.py)
+![Class Attributes](classAttributesMethod.md)
+![Advanced Relationships](advancedRelationships.py)
+
+## Quarter 2 Works
+### Encapsulation
+![ACT 1](SG8_Encapsulation_ACT1.md)
+![ACT 2](SG8_Encapsulation_ACT2.md)
+![Encapsulation Activity](sg8_encapsulation.py)
 
 
 
-ILA #1: https://ominous-potato-xr9xxvqrx5wx3v4jp-46545.app.github.dev/
 
-ILA #2: https://ominous-potato-xr9xxvqrx5wx3v4jp-46545.app.github.dev/
 
-ILA #3: https://ominous-potato-xr9xxvqrx5wx3v4jp-46545.app.github.dev/
+
