@@ -36,6 +36,8 @@
 ![ACT 2](SG8_Encapsulation_ACT2.md)
 ![Encapsulation Activity](sg8_encapsulation.py)
 
+### Inheritance
+![Inheritance Activity](sg9_inheritance.py)
 
 
 
