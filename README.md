@@ -40,7 +40,7 @@
 ![Inheritance Activity](sg9_inheritance.py)
 
 ### Method Overriding
-![Method Overriding Activity](sg10_method-overriding.py)
+![Method Overriding Activity](sg10_method_overriding.py)
 
 
 
