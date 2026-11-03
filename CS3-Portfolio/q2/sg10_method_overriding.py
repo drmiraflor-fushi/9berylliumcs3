@@ -2,17 +2,17 @@ class Animal:
   def __init__ (self, name):
     self._name = name
 
-  @property
+  @property # Bundles the code as one so it can be called in other classes
   def name(self):
     return self._name
 
-  def eat(self):
+  def eat(self): # Uses pass as it will only be defined in sub-classes
     pass
 
-  def make_sound(self):
+  def make_sound(self): # Uses pass as it will only be defined in sub-classes
     pass
 
-class Lion(Animal):
+class Lion(Animal): # Sub-classes define eat function and make_sound function, as they are personalized
   def eat(self):
     print(f"{self.name} eats fresh meat.")
 
@@ -33,6 +33,7 @@ class Monkey(Animal):
   def make_sound(self):
     print(f"{self.name} chatters!")
 
+# Adding objects to present outputs
 lion = Lion("Kaveh") 
 elephant = Elephant("Meena") 
 monkey = Monkey("Boots")
