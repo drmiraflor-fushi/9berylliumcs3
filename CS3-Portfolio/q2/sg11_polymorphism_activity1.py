@@ -15,7 +15,7 @@ class Patient: # Is the parent class
   def set_bill_amount(self, bill_amount: float):
     self._bill_amount = bill_amount
 
-  def calculare_bill)self):
+  def calculate_bill(self):
     return self._bill_amount
     
   def display_patient_type(self):
