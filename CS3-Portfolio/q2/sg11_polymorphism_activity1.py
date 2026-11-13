@@ -44,8 +44,8 @@ p2 = SeniorPatient("Joseph Joestar", 1000.0)
 p2.display_patient_type() # Output: Senior Citizen
 print(f"Name: {p2.get_name()}, Final Bill: {p2.calculate_bill()}\n") # Displays the final bill with the 20% discount
 
-p3 = PhilhealthPatient()
-p3.display_patient_type("Giorno Giovanna", 1000.0) # Output: PhilHealth Member
+p3 = PhilhealthPatient("Giorno Giovanna", 1000.0)
+p3.display_patient_type() # Output: PhilHealth Member
 print(f"Name: {p3.get_name()}, Finall Bill: {p3.calculate_bill()}\n") # Displays the final bill with the 15% discount
     
     
