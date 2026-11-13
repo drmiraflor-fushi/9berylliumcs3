@@ -2,7 +2,7 @@ class Patient: # Is the parent class
   def __init__(self, name: str, bill_amount: float):
     self._name = name
     self._bill_amount = bill_amount
-
+    
   def get_name(self):
     return self._name
 
