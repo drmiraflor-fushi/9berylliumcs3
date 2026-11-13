@@ -21,14 +21,14 @@ class Patient: # Is the parent class
   def display_patient_type(self):
     print("Patient Type: Regular Patient.")
 
-class SeniorPatient(Patient): # Copies code from Patient Class but overrides with its own code
+class SeniorPatient(Patient): # Copies code from Patient Class but overrides with its own code (for the display, and calculation of final bill / discount)
   def calculate_bill(self): # Applies the 20% discount for senior citizens
     return self.get_bill_amount() * 0.80
 
   def display_patient_type(self):
     print("Patient Type: Senior Citizen")
 
-class PhilhealthPatient(Patient): # Also inherits code from Patient Class but overrides with its own code
+class PhilhealthPatient(Patient): # Also inherits code from Patient Class but overrides with its own code (for the display, and calculation of final bill / discount)
   def calculate_bill(self): # Applies the 15% discount for Philhealth members
     return self.get_bill_amount() * 0.85
   
