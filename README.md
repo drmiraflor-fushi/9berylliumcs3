@@ -42,5 +42,6 @@
 ### Method Overriding
 ![Method Overriding Activity](sg10_method_overriding.py)
 
-
+### Polymorphism
+![Polymorphism Activity 1](sg11_polymorphism_activity1.py)
 
