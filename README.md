@@ -44,4 +44,6 @@
 
 ### Polymorphism
 ![Polymorphism Activity 1](sg11_polymorphism_activity1.py)
+![Polymorphism Activity 2 (Written Answers)](sg11_polymorphism_activity2_written-answers.md)
+![Polymorphism Activity 2 (Code)](sg11_polymorphism_activity2_code.py)
 
