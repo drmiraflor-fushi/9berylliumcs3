@@ -36,16 +36,17 @@ class PhilhealthPatient(Patient): # Also inherits code from Patient Class but ov
     print("Patient Type: PhilHealth Member")
 
 # Example Output:
-p1 = Patient("Rohan Kishibe", 1000.0)
-p1.display_patient_type() # Output: Patient Type: Regular Patient.
-print(f"Name: {p1.get_name()}, Final Bill: {p1.calculate_bill()}\n")
-
-p2 = SeniorPatient("Joseph Joestar", 1000.0)
-p2.display_patient_type() # Output: Senior Citizen
-print(f"Name: {p2.get_name()}, Final Bill: {p2.calculate_bill()}\n") # Displays the final bill with the 20% discount
-
-p3 = PhilhealthPatient("Giorno Giovanna", 1000.0)
-p3.display_patient_type() # Output: PhilHealth Member
-print(f"Name: {p3.get_name()}, Finall Bill: {p3.calculate_bill()}\n") # Displays the final bill with the 15% discount
-    
-    
+print("Hospital Billing System")
+print("------------------------")
+patients = [
+  Patient("Rohan Kishibe", 1000.0),
+  SeniorPatient("Joseph Joestar", 1000.0),
+  PhilhealthPatient("Giorno Giovanna", 1000.0)
+]
+  
+for patient in patients:
+  print(f"Patient Name: {patient.get_name()}")
+  patient.display_patient_type()
+  print(f"Original Bill: {patient.get_bill_amount():,.2f} pesos.")
+  print(f"Final Bill: {patient.calculate_bill():,.2f} pesos.\n")
+  
