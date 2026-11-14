@@ -5,4 +5,4 @@
 ### - In order to work inside the same loop without inheriting from Animal, the Car class needed to satisfy the same minimum requirements: a speak method to successfully respond to the loop calling, and the alive attribute so it wouldn't raise an AttributeError when the loop tried to access the property. 
 
 # 3. How does the code in 2.2 demonstrate polymorphism?
-### - yes yes
+### - The code in 2.2 demonstrates polymorphism in many ways. Firstly, it doesn't require shared inheritance. The classes don't inherit from a parent class, making them completely independent. Secondly, the function doesn't check or care what type of object is passed into it. Instead, it assumes that whatever object it receives has a move() method. Lastly, duck typing has a complex way of executing. When the start_trip() method was executed with car, boat, and drone, Python personally calls the respective method attuned to each object's class. And as defined in 1.a, because all three objects "quack like a duck", they can be used interchangeably for the same function. 
