@@ -38,15 +38,19 @@ class PhilhealthPatient(Patient): # Also inherits code from Patient Class but ov
 # Example Output:
 print("Hospital Billing System")
 print("------------------------")
+
+# Used a list for easier coding
 patients = [
   Patient("Rohan Kishibe", 1000.0),
   SeniorPatient("Joseph Joestar", 1000.0),
   PhilhealthPatient("Giorno Giovanna", 1000.0)
 ]
-  
-for patient in patients:
+
+# The items inside the list will be accessed / generally for easier and shorter coding
+for patient in patients: 
   print(f"Patient Name: {patient.get_name()}")
   patient.display_patient_type()
   print(f"Original Bill: {patient.get_bill_amount():,.2f} pesos.")
   print(f"Final Bill: {patient.calculate_bill():,.2f} pesos.\n")
-  
+
+# I used an LLM (Gemini) to help me with the example output, since I'm still not very good with lists. Otherwise, the code would've been much longer, with each output having to be individually coded. 
